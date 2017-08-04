@@ -10,7 +10,7 @@ with Handlebars to generate the HTML.
 
 ### Preview Site
 
-https://murmuring-savannah-95927.herokuapp.com/
+
 
 ### Getting Started
 
