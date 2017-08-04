@@ -1,0 +1,28 @@
+INSERT INTO exercise_samples (exercise_type,youTube_trailers)
+VALUES ("arms","https://www.youtube.com/embed/TwD-YGVP4Bk"),
+("arms","https://www.youtube.com/embed/nRgxYX2Ve9w"),
+("arms","https://www.youtube.com/embed/nRiJVZDpdL0"),
+("arms","https://www.youtube.com/embed/ZO81bExngMI"),
+("arms","https://www.youtube.com/embed/0JfYxMRsUCQ"),
+("back","https://www.youtube.com/embed/XZbJ8912hQU"),
+("back","https://www.youtube.com/embed/vT2GjY_Umpw"),
+("back","https://www.youtube.com/embed/K225yXkDiqo"),
+("back","https://www.youtube.com/embed/Y9I1cmLf7_I"),
+("back","https://www.youtube.com/embed/-koP10y1qZI"),
+("chest","hhttps://www.youtube.com/embed/gRVjAtPip0Y"),
+("chest","https://www.youtube.com/embed/ZOwwBk642SI"),
+("chest","https://www.youtube.com/embed/dtNXLavPFo0"),
+("chest","https://www.youtube.com/embed/07Bcqtib4FM"),
+("chest","https://www.youtube.com/embed/eozdVDA78K0"),
+("core","https://www.youtube.com/embed/JB2oyawG9KI"),
+("core","https://www.youtube.com/embed/riAutegDqdI"),
+("core","https://www.youtube.com/embed/wkD8rjkodUI"),
+("core","https://www.youtube.com/embed/nmwgirgXLYM"),
+("core","https://www.youtube.com/embed/5EFcTkm0J-w"),
+("legs","https://www.youtube.com/embed/Dy28eq2PjcM"),
+("legs","https://www.youtube.com/embed/1Tq3QdYUuHs"),
+("legs","https://www.youtube.com/embed/-M4-G8p8fmc"),
+("legs","https://www.youtube.com/embed/DGavj41F_Cs"),
+("legs","https://www.youtube.com/embed/hxldG9FX4j4");
+
+

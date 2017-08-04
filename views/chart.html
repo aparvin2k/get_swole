@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Progress</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="assets/js/Chart.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="../assets/css/style.css">
+	
+</head>
+<body>	
+ <div class="jumbotron jumbotron-fluid">
+        <nav class="navbar navbar-default navbar-fixed-top nav-style">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 no-padding">
+                        <div class="navbar-header teal-back side-padding">
+                            <h1 class="h1font" style="font-family:'Passion One', cursive; font-weight: 400px;">GET SWOLE</h1>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="./index">Home</a></li>
+                            <li><a id="border" href="./about">About</a></li>
+                            <li><a href="./contact">Contact</a></li>
+                             <li class="active"><a href="./chart">Progress<span class="sr-only">(current)</span></a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>  
+        </nav>
+    </div>
+
+<div id="progress" class="chart-container">
+    <canvas id="chart"></canvas>
+</div>
+
+<script>
+	
+$(document).ready(function(){
+
+
+var ctx = document.getElementById("chart").getContext('2d');
+
+var progChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels:['workout1','workout2','workout3','workout4','workout5'],
+        datasets: [{
+            label: 'arms',
+            data: [5,7,12,20,25],
+            backgroundColor: [
+                'blue'
+            ],
+            borderColor:[
+                'blue'
+            ],
+            fill: false
+
+        },
+        {
+			label: 'legs',
+            data: [2,12,22,25,30],
+            backgroundColor: [
+                'pink'
+            ],
+            borderColor:[
+                'pink'
+            ],
+            fill: false
+        },
+        {
+			label: 'chest',
+            data: [4,10,15,20,22],
+            backgroundColor: [
+                'orange'
+            ],
+            borderColor:[
+                'orange'
+            ],
+            fill: false
+        },
+        {
+			label: 'back',
+            data: [5,9,13,18,20],
+            backgroundColor: [
+                'red'
+            ],
+            borderColor:[
+                'red'
+            ],
+            fill: false
+        },
+                {
+			label: 'core',
+            data: [8,16,17,19,22],
+            backgroundColor: [
+                'brown'
+            ],
+            borderColor:[
+                'brown'
+            ],
+            fill: false
+        },
+
+
+
+        ],
+    }
+});
+
+});
+</script>
+
+</body>
+</html>

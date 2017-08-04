@@ -1,1 +1,2 @@
-# get_swole
+# get-swole
+Group project 

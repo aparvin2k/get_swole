@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../assets/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Julee|Lobster+Two" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+	<title>Main Page</title>
+</head>
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <nav class="navbar navbar-default navbar-fixed-top nav-style">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 no-padding">
+                        <div class="navbar-header teal-back side-padding">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#Navbar">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>                        
+                            </button>
+                            <h1 class="h1font" style="font-family:'Passion One', cursive; font-weight: 400px;">GET SWOLE</h1>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6">
+                        <ul class="nav navbar-nav navbar-right collapse navbar-collapse" id="Navbar">
+                            <li class="active"><a href="./index">Home <span class="sr-only">(current)</span></a></li>
+                            <li><a id="border" href="./about">About</a></li>
+                            <li><a href="./contact">Contact</a></li>
+                             <li><a href="./chart">Progress</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>  
+        </nav>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2">
+                <select class="div-toggle" data-target=".my-info-1" id="dropdown">
+                    <option value="select">Select an Option</option> 
+                    <option value="chest">chest</option>
+                    <option value="back">back</option>
+                    <option value="legs">legs</option>
+                    <option value="core">core</option>
+                    <option value="arms">arms</option>
+                </select>
+            </div>
+            <div class="col-sm-6 col-md-10" id="sample">
+<!--                 <a href="#workOutModal" class="btn btn-md btn-primary" data-toggle="modal">Example 1</a> -->
+            </div>
+<!--             <div class="col-md-2" id="sample2">
+                <a href="#workOutModal" class="btn btn-md btn-primary" data-toggle="modal">Example 2</a>
+            </div>
+           <div class="col-md-2" id="sample3">
+                <a href="#workOutModal" class="btn btn-md btn-primary" data-toggle="modal">Example 3</a>
+            </div>
+            <div class="col-md-2" id="sample4">
+                <a href="#workOutModal" class="btn btn-md btn-primary" data-toggle="modal">Example 4</a>
+            </div>
+            <div class="col-md-2" id="sample5">
+                <a href="#workOutModal" class="btn btn-md btn-primary" data-toggle="modal">Example 5</a>
+            </div> -->
+        </div>
+    </div>
+    <hr>
+	<div class="container-fluid">
+        <div class="row">
+            <div class="col-md-10">
+            	<table id="example" class="display" cellspacing="0" width="100%">
+                    <thead>
+                        <tr>
+                            <th>Exercise</th>
+                            <th>Weight</th>
+                            <th>Set 1</th>
+                            <th>Set 2</th>
+                            <th>Set 3</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <tr>
+                            <td><input type="text" name="exercise-name"></td>
+                            <td><input type="integer" id="row-weight" name="row-weight" value=""></td>
+                            <td><input type="integer" id="row-set1" name="row-set1" value=""></td>
+                            <td><input type="integer" id="row-set2" name="row-set2" value=""></td>
+                            <td><input type="integer" id="row-set3" name="row-set3" value=""></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-2" style="margin-top: 12px;">
+                <button type="submit" class="btn btn-primary btn-md" id="add-btn"><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span> Submit</button>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container-fluid">
+            <div class="col-md-12">
+                <div class="exercise-container">
+                    <h1>Exercises Done So Far:</h1>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                            <th>Exercise</th>
+                            <th>Weight</th>
+                            <th>Set 1</th>
+                            <th>Set 2</th>
+                            <th>Set 3</th>
+                            <th>Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr id="form-row">
+                                <form id="exercise-form">
+                                    <td colspan="4">
+                                        <input placeholder="Enter a name" id="exercise-name" type="text" />
+                                    </td>
+                                </form>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+    </div>
+    <div class="navbar navbar-default navbar-fixed-bottom" id="footer">
+      <div class="container-fluid">
+        <p class="text-muted text-center footer">&copy;Copyright 2017 Get Swole</p>
+      </div>
+    </div>
+    <!-- Modal HTML Start-->
+    <div class="workout"> 
+        <div id="workOutModal" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> <STRONG>X</STRONG>
+                        </button>
+                        <h4 class="modal-title">YouTube Tutorial</h4>
+                    </div>
+                    <dir id="new-modal">
+                        
+                    </dir>
+                    <div class="modal-body">
+                        <iframe id="exercise_trailer" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <!-- Modal HTML Start End -->
+    <script type="text/javascript" src="/assets/js/modal.js"></script>
+    <!-- Custom script -->
+    <script type="text/javascript" src="/assets/js/exercise_data.js"></script>
+</body>
+</html>
